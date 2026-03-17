@@ -55,7 +55,8 @@ agentic-ai-backend/
 - **main.py**: Main entry point; may initialize the app or run scripts.
 - **model.py**: Contains data models and core logic for chat assistant.
 - **server.py**: Sets up the web server and API routes for chat interactions.
-- **__pycache__/**: Stores Python bytecode cache files (auto-generated).
+- **resetdb.py**: Utility script to reset the SQLite database by dropping all user tables and clearing the `sqlite_sequence` table to ensure a clean development state.
+
 
 ## Flow (Step-by-Step)
 1. **Start the server**: Launches the backend API for chat requests.

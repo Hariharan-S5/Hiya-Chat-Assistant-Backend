@@ -91,12 +91,6 @@ agentic-ai-backend/
 - For detailed API usage, see the docstrings in `server.py` and `model.py`.
 - For database schema, see `db.py`.
 
-## Contributing
-1. Fork the repo
-2. Create a branch
-3. Make changes
-4. Submit a pull request
-
 ## Architecture
 The backend is structured in a modular way:
 

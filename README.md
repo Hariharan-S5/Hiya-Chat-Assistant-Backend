@@ -7,6 +7,7 @@ It manages chat requests, integrates with Large Language Models (LLMs), and stor
 The backend follows a **modular architecture**, making it easy to maintain, extend, and integrate with frontend applications.
 
 **Frontend Repository:** [Hiya Chat Assistant Frontend](https://github.com/Hariharan-S5/Hiya-Chat-Assistant-Frontend.git)
+
 ---
 
 # Features

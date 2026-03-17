@@ -1,13 +1,34 @@
-# Hiya-Chat-Assistant-Backend
+# Hiya Chat Assistant Backend
 
-## Description
-This project is the backend for the Hiya Chat Assistant, designed to handle chat interactions, manage data, and provide intelligent responses. It is built using Python and follows a modular structure for easy maintenance and scalability.
+## Overview
+**Hiya Chat Assistant Backend** is a Python-based backend system designed to power an AI chat assistant.  
+It manages chat requests, integrates with Large Language Models (LLMs), and stores user interaction data.
 
-## Tech Stack
-- **Python 3.10+**: Core programming language
-- **Flask**: Web server framework (if used)
-- **SQLite**: Lightweight database (if used)
-- **Other dependencies**: See below for installation
+The backend follows a **modular architecture**, making it easy to maintain, extend, and integrate with frontend applications.
+
+---
+
+# Features
+- AI-powered chat assistant backend
+- Local LLM execution using **Ollama**
+- Modular Python architecture
+- Lightweight **SQLite database**
+- Clean API layer for chat interactions
+- Easy development setup
+
+---
+
+# Tech Stack
+
+| Technology | Purpose |
+|-----------|--------|
+| Python 3.10+ | Core backend language |
+| Flask | API server framework |
+| SQLite | Lightweight database |
+| Ollama | Local LLM runtime |
+| Llama3 / Phi3 | AI models used for chat |
+
+---
 
 ## Project Structure
 ```
@@ -56,7 +77,7 @@ agentic-ai-backend/
 - **model.py**: Contains data models and core logic for chat assistant.
 - **server.py**: Sets up the web server and API routes for chat interactions.
 - **resetdb.py**: Utility script to reset the SQLite database by dropping all user tables and clearing the `sqlite_sequence` table to ensure a clean development state.
-
+- **__pycache__/**: Stores Python bytecode cache files (auto-generated).
 
 ## Flow (Step-by-Step)
 1. **Start the server**: Launches the backend API for chat requests.
@@ -85,16 +106,19 @@ The backend is structured in a modular way:
 
 ### Diagram
 ```
-User/Client
-    |
-    v
- [API Server (server.py)]
-    |
-    v
- [LLM Model (Ollama: Llama3/Phi3)]
-    |
-    v
- [Database (SQLite: db.py)]
+User / Client
+      |
+      v
+API Server (server.py)
+      |
+      v
+Model Logic (model.py)
+      |
+      v
+LLM Model via Ollama
+      |
+      v
+Database Storage (db.py)
 ```
 
 
@@ -148,5 +172,7 @@ For larger scale, you can migrate to PostgreSQL or MySQL.
 ## License
 MIT License
 
-For any questions or support, contact the maintainer.
+## Maintainer
+Project maintained by the Hiya Chat Assistant development team.
+For questions or support, please contact the repository maintainer.
 
